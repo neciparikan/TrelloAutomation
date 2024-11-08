@@ -94,41 +94,42 @@ The project includes below structure to organize the tests:
 TRELLOAUTOMATION
 ├── TrelloAutomation/
 │   ├── Config/
-│   │   ├── TrelloSettings.cs // Configuration settings for Trello
+│   │   └── TrelloSettings.cs          // Configuration settings for Trello
 │   ├── Features/
-│   │   ├── Login.feature // Gherkin feature file for login scenarios
-│   │   ├── BoardManagement.feature // Gherkin feature file for board management scenarios
-│   │   └── BoardApiTests.feature // Gherkin feature file for API tests related to board and card creation
+│   │   ├── Login.feature               // Gherkin feature file for login scenarios
+│   │   ├── BoardManagement.feature      // Gherkin feature file for board management scenarios
+│   │   └── BoardApiTests.feature       // Gherkin feature file for API tests related to board and card creation
 │   ├── Helpers/
-│   │   ├── WebDriverFactory.cs // Helper class for creating WebDriver instances
-│   │   ├── ScreenshotHelper.cs // Helper class for taking screenshots
-│   │   └── ApiHelper.cs // Helper class for API requests
+│   │   ├── WebDriverFactory.cs         // Helper class for creating WebDriver instances
+│   │   ├── ScreenshotHelper.cs         // Helper class for taking screenshots
+│   │   └── ApiHelper.cs                // Helper class for API requests
 │   ├── Models/
-│   │   └── TrelloModels.cs // Model class for Trello List
+│   │   └── TrelloModels.cs             // Model class for Trello List
 │   ├── PageObjects/
-│   │   ├── IBoardPage.cs // Interface for board page interactions
-│   │   ├── BoardPage.cs // Implementation of IBoardPage
-│   │   ├── ILoginPage.cs // Interface for login page interactions
-│   │   └── LoginPage.cs // Implementation of ILoginPage
-│   ├── Startup.cs // Startup class for configuring services
+│   │   ├── IBoardPage.cs               // Interface for board page interactions
+│   │   ├── BoardPage.cs                // Implementation of IBoardPage
+│   │   ├── ILoginPage.cs               // Interface for login page interactions
+│   │   └── LoginPage.cs                // Implementation of ILoginPage
+│   ├── Startup.cs                       // Startup class for configuring services
 │   ├── Tests/
-│   │   ├── APITests/ // Folder for API test cases
-│   │   │   ├── TrelloApiTests.cs // API test cases for Trello
-│   │   │   └── BoardApiSteps.cs // Step definitions for Board API tests
-│   │   └── UITests/ // Folder for UI test cases
-│   │       ├── BoardSteps.cs // Step definitions for BoardManagement scenarios
-│   │       └── Hooks.cs // Hooks class for SpecFlow
+│   │   ├── APITests/                   // Folder for API test cases
+│   │   │   ├── TrelloApiTests.cs       // API test cases for Trello
+│   │   │   └── BoardApiSteps.cs        // Step definitions for Board API tests
+│   │   └── UITests/                    // Folder for UI test cases
+│   │       ├── BoardSteps.cs           // Step definitions for BoardManagement scenarios
+│   │       └── Hooks.cs                 // Hooks class for SpecFlow
 │   ├── TestResults/
-│   │   └── TestResult.trx // Test result file
-│   ├── appsettings.json // Configuration settings file
-│   ├── LivingDoc.html 
-│   ├── specflow.json // SpecFlow configuration file
-│   ├── Dockerfile // Dockerfile for the project
-│   ├── docker-compose.yml // Docker Compose configuration
-│   └── Test Plan/ // Folder containing the Test Plan document
+│   │   └── TestResult.trx              // Test result file
+│   ├── appsettings.json                 // Configuration settings file
+│   ├── LivingDoc.html                   // Living documentation file
+│   ├── specflow.json                    // SpecFlow configuration file
+│   ├── Dockerfile                       // Dockerfile for the project
+│   ├── docker-compose.yml               // Docker Compose configuration
+│   └── Test Plan/                       // Folder containing the Test Plan document
 │       └── Test Plan for Trello Automation Project.pdf
-├── TrelloAutomation.sln // Solution file for managing the project
-└── README.md // This README file
+├── TrelloAutomation.sln                 // Solution file for managing the project
+└── README.md                            // This README file
+
 
 
 ## Requirements of the Test
