@@ -97,29 +97,29 @@ The project includes below structure to organize the tests:
 <summary>Expand to view project structure</summary>
 
 TRELLOAUTOMATION
-── TrelloAutomation/
- ├── Config/
- └── TrelloSettings.cs // Configuration settings for Trello
-── Features/
- ├── Login.feature // Gherkin feature file for login scenarios
- ├── BoardManagement.feature // Gherkin feature file for board management scenarios
- └── BoardApiTests.feature // Gherkin feature file for API tests related to board and card creation
-── Helpers/
- ├── WebDriverFactory.cs // Helper class for creating WebDriver instances
- ├── ScreenshotHelper.cs // Helper class for taking screenshots
- └── ApiHelper.cs // Helper class for API requests
-── Models/
- └── TrelloModels.cs // Model class for Trello List
-── PageObjects/
- ├── IBoardPage.cs // Interface for board page interactions
- ├── BoardPage.cs // Implementation of IBoardPage
- ├── ILoginPage.cs // Interface for login page interactions
- └── LoginPage.cs // Implementation of ILoginPage
-── Startup.cs // Startup class for configuring services
-│ ├── Tests/
-│ │ ├── APITests/ // Folder for API test cases
-│ │ │ ├── TrelloApiTests.cs // API test cases for Trello
-│ │ │ └── BoardApiSteps.cs // Step definitions for Board API tests
+TrelloAutomation/
+    Config/
+        TrelloSettings.cs // Configuration settings for Trello
+Features/
+    Login.feature // Gherkin feature file for login scenario
+    BoardManagement.feature // Gherkin feature file for board management scenarios
+    BoardApiTests.feature // Gherkin feature file for API tests related to board and card creation
+Helpers/
+    WebDriverFactory.cs // Helper class for creating WebDriver instances
+    ScreenshotHelper.cs // Helper class for taking screenshots
+    ApiHelper.cs // Helper class for API requests
+Models/
+    TrelloModels.cs // Model class for Trello List
+PageObjects/
+    IBoardPage.cs // Interface for board page interactions
+    BoardPage.cs // Implementation of IBoardPage
+    ILoginPage.cs // Interface for login page interactions
+    LoginPage.cs // Implementation of ILoginPage
+Startup.cs // Startup class for configuring services
+Tests/
+    APITests/ // Folder for API test cases
+        TrelloApiTests.cs // API test cases for Trello
+            BoardApiSteps.cs // Step definitions for Board API tests
 │ │ └── UITests/ // Folder for UI test cases
 │ │ ├── BoardSteps.cs // Step definitions for BoardManagement scenarios
 │ │ └── Hooks.cs // Hooks class for SpecFlow
