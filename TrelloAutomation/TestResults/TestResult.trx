@@ -1,0 +1,1311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e268e46d-753f-49d7-b096-c12c7c1c0bd8" name="necip.arikan@DAFEHVLPP25791 2024-11-08 13:16:33" runUser="PACCAR-EU\necip.arikan" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2024-11-08T13:16:33.1629746+01:00" queuing="2024-11-08T13:16:33.1629749+01:00" start="2024-11-08T13:16:09.0840420+01:00" finish="2024-11-08T13:18:21.0896894+01:00" />
+  <TestSettings name="default" id="c1b43392-a540-46ec-a7a8-5fe721d18c15">
+    <Deployment runDeploymentRoot="necip.arikan_DAFEHVLPP25791_2024-11-08_13_16_33" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="3dce1bab-bd75-45d3-8aed-1350ab8610f4" testId="e3645806-7dfc-df15-e160-1c3096d21f60" testName="CreateBoard_ShouldReturnCreatedBoard" computerName="DAFEHVLPP25791" duration="00:00:00.0086480" startTime="2024-11-08T13:18:20.8315074+01:00" endTime="2024-11-08T13:18:20.8401543+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3dce1bab-bd75-45d3-8aed-1350ab8610f4">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateBoard_ShouldReturnCreatedBoard</StdOut>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.PostAsync(String endpoint, Object data) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 29&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.CreateBoard_ShouldReturnCreatedBoard() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 56&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c34d20f3-3895-4890-a0e1-fa07a7e1ead7" testId="bfa48150-e846-3e46-9f80-c0cfff9318cb" testName="CreateList_ShouldReturnCreatedList" computerName="DAFEHVLPP25791" duration="00:00:00.0015770" startTime="2024-11-08T13:18:20.8429238+01:00" endTime="2024-11-08T13:18:20.8445012+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c34d20f3-3895-4890-a0e1-fa07a7e1ead7">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateList_ShouldReturnCreatedList&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId</StdOut>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 78&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.GetBoardId_ShouldReturnBoardId() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 72&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.CreateList_ShouldReturnCreatedList() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 92&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e52e996-7a40-4b2e-af6a-1a724aa3d0d1" testId="6bbb82e3-c43e-a30e-a44a-c2dd5d694bbd" testName="UpdateTheStatusOfACard(&quot;Test API Card for Update&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:03.9882900" startTime="2024-11-08T13:18:16.8424248+01:00" endTime="2024-11-08T13:18:20.8306758+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e52e996-7a40-4b2e-af6a-1a724aa3d0d1">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:20 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the status of a card\131820.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the status of a card\131820.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card for Update" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card for Update"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I update the card status to "Doing"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the card "Test API Card for Update" present in the "Doing" list (API)&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:20 INF] WebDriver instance has been quit.</StdOut>
+        <ErrorInfo>
+          <Message>System.Net.Http.HttpRequestException : Request failed with status code Unauthorized. Response: invalid key</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 86&#xD;
+   at TrelloAutomation.Tests.APITests.BoardApiSteps.WhenIRetrieveTheBoardIDFor(String boardName) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\BoardApiSteps.cs:line 103&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.ScenarioCleanup()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.UpdateTheStatusOfACard(String cardName, String[] exampleTags) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Features\BoardApiTests.feature:line 53&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="55fa8423-da04-42ea-8522-47ac60e17666" testId="d01295e6-47fd-1bdd-f0e9-ccdb22a5b852" testName="CreateANewTrelloBoardAndACardOnIt(&quot;Test Board from API&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:04.0964970" startTime="2024-11-08T13:18:08.7274921+01:00" endTime="2024-11-08T13:18:12.8239489+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55fa8423-da04-42ea-8522-47ac60e17666">
+      <Output>
+        <StdOut>[13:18:12 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:12 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:12 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and a card on it\131812.png&#xD;
+When I create a board with the name "Test Board from API"&#xD;
+API Key: your_api_key&#xD;
+API Token: your_api_token&#xD;
+Request URL: boards/?key=your_api_key&amp;token=your_api_token&#xD;
+Error Response: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.3s)&#xD;
+[13:18:12 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and a card on it\131812.png&#xD;
+Then I should receive a response indicating the board was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the board name should be "Test Board from API"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:12 INF] WebDriver instance has been quit.</StdOut>
+        <ErrorInfo>
+          <Message>System.Net.Http.HttpRequestException : Request failed with status code Unauthorized. Response: invalid key</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.PostAsync(String endpoint, Object data) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 49&#xD;
+   at TrelloAutomation.Tests.APITests.BoardApiSteps.WhenICreateABoardWithTheName(String baseName) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\BoardApiSteps.cs:line 76&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.ScenarioCleanup()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.CreateANewTrelloBoardAndACardOnIt(String boardName, String[] exampleTags) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Features\BoardApiTests.feature:line 10&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eec30ba1-df8f-4c6f-ab28-7403a0c6e3d4" testId="eda02b5a-9b0f-4f30-b5cc-b6731d5a0f98" testName="LoginWithInvalidCredentials" computerName="DAFEHVLPP25791" duration="00:00:09.9192420" startTime="2024-11-08T13:17:32.5434869+01:00" endTime="2024-11-08T13:17:42.4626348+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eec30ba1-df8f-4c6f-ab28-7403a0c6e3d4">
+      <Output>
+        <StdOut>[13:17:36 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:37 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (1.0s)&#xD;
+[13:17:37 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131737.png&#xD;
+When I click the "Log in" button&#xD;
+[13:17:38 INF] Clicked the 'Log in' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheLoginButton() (0.7s)&#xD;
+[13:17:38 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131738.png&#xD;
+And I enter my email&#xD;
+[13:17:38 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:39 INF] Entered email: neciparikan@gmail.com&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyEmail() (1.0s)&#xD;
+[13:17:39 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131739.png&#xD;
+And I click the "Continue" button&#xD;
+[13:17:39 INF] Clicked the 'Continue' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheContinueButton() (0.1s)&#xD;
+[13:17:39 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131739.png&#xD;
+And I enter wrong password&#xD;
+[13:17:39 INF] Entering password.&#xD;
+[13:17:41 INF] Entered invalid password for testing.&#xD;
+-&gt; done: BoardSteps.WhenIEnterWrongPassword() (1.1s)&#xD;
+[13:17:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131741.png&#xD;
+And I submit login&#xD;
+[13:17:41 INF] Clicking login button.&#xD;
+[13:17:41 INF] Submitted login form.&#xD;
+-&gt; done: BoardSteps.WhenISubmitLogin() (0.1s)&#xD;
+[13:17:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131741.png&#xD;
+Then I should see an error message containing "Incorrect email address and / or password"&#xD;
+[13:17:42 INF] Verified error message containing: Incorrect email address and / or password&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeAnErrorMessageContaining("Incorrect email a...") (0.6s)&#xD;
+[13:17:42 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131742.png&#xD;
+[13:17:42 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d1d36f54-a051-451d-a9b6-d0ac571ab097" testId="3a8afd61-5f4e-40d0-662c-05ff10471ffa" testName="GetBoardId_ShouldReturnBoardId" computerName="DAFEHVLPP25791" duration="00:00:00.0018650" startTime="2024-11-08T13:18:20.8466679+01:00" endTime="2024-11-08T13:18:20.8485323+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1d36f54-a051-451d-a9b6-d0ac571ab097">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId</StdOut>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 78&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.GetBoardId_ShouldReturnBoardId() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 72&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ced90e1b-163b-41c2-a60b-4c515a65d139" testId="ff2222d8-3cd9-b2d3-2c50-3d7e00aa0ef2" testName="DeleteCard_ShouldReturnDeletedCardResponse" computerName="DAFEHVLPP25791" duration="00:00:00.0020970" startTime="2024-11-08T13:18:20.8445324+01:00" endTime="2024-11-08T13:18:20.8466293+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ced90e1b-163b-41c2-a60b-4c515a65d139">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: DeleteCard_ShouldReturnDeletedCardResponse&#xD;
+[13:18:20 INF] Starting test: CreateCard_ShouldReturnCreatedCard&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId</StdOut>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 78&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.GetBoardId_ShouldReturnBoardId() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 72&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.CreateCard_ShouldReturnCreatedCard() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 117&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.DeleteCard_ShouldReturnDeletedCardResponse() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 143&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="470f19e7-64a0-44d2-8eed-f3532a80e7d4" testId="f6511cf9-cb26-0bfc-7ad3-bf8ecfbfa69e" testName="ReadTheTrelloCardDetails(&quot;Test&quot;,&quot;TestCard1&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:19.2502720" startTime="2024-11-08T13:16:52.8007315+01:00" endTime="2024-11-08T13:17:12.0508246+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="470f19e7-64a0-44d2-8eed-f3532a80e7d4">
+      <Output>
+        <StdOut>[13:16:56 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:57 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:58 INF] Clicked the 'Log in' button.&#xD;
+[13:16:58 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:59 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:59 INF] Clicked the 'Continue' button.&#xD;
+[13:16:59 INF] Entering password.&#xD;
+[13:17:01 INF] Entered password.&#xD;
+[13:17:01 INF] Clicking login button.&#xD;
+[13:17:01 INF] Submitted login form.&#xD;
+[13:17:01 INF] Continue without two-step verification button not visible.&#xD;
+[13:17:01 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.6s)&#xD;
+[13:17:01 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131701.png&#xD;
+When I click on the "Test" board&#xD;
+[13:17:04 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.5s)&#xD;
+[13:17:05 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131705.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:17:05 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:17:07 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:17:07 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131707.png&#xD;
+And I enter the card name "TestCard1"&#xD;
+[13:17:07 INF] Attempting to enter card name.&#xD;
+[13:17:07 INF] Entered card name: TestCard1&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard1") (0.1s)&#xD;
+[13:17:07 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131707.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:17:07 INF] Attempting to click 'Add card' button.&#xD;
+[13:17:07 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:17:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131708.png&#xD;
+And I click the card input field for "TestCard1"&#xD;
+[13:17:09 INF] Clicked on the card: TestCard1&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard1") (1.7s)&#xD;
+[13:17:10 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131710.png&#xD;
+Then I should see the information containing "necip added this card to To Do"&#xD;
+[13:17:10 INF] Verified information on the card contains: necip added this card to To Do&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheInformationContaining("necip added this ...") (0.3s)&#xD;
+[13:17:11 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131711.png&#xD;
+[13:17:12 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f40399d5-7b11-4e4c-86c3-92724cf21bfc" testId="6ac23fcf-02be-b1a7-e0a4-ab8b9e32dadd" testName="CreateANewTrelloBoardAndAddACard(&quot;Test&quot;,&quot;Test&quot;,&quot;TrelloAutomation&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:19.5348060" startTime="2024-11-08T13:16:13.5457561+01:00" endTime="2024-11-08T13:16:33.0802892+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f40399d5-7b11-4e4c-86c3-92724cf21bfc">
+      <Output>
+        <StdOut>[13:16:18 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:20 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:20 INF] Clicked the 'Log in' button.&#xD;
+[13:16:20 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:22 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:22 INF] Clicked the 'Continue' button.&#xD;
+[13:16:22 INF] Entering password.&#xD;
+[13:16:24 INF] Entered password.&#xD;
+[13:16:24 INF] Clicking login button.&#xD;
+[13:16:24 INF] Submitted login form.&#xD;
+[13:16:24 INF] Continue without two-step verification button not visible.&#xD;
+[13:16:24 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (5.4s)&#xD;
+[13:16:24 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131624.png&#xD;
+Then I should be redirected to the Trello dashboard&#xD;
+[13:16:27 INF] Successfully redirected to the Trello dashboard.&#xD;
+-&gt; done: BoardSteps.ThenIShouldBeRedirectedToTheTrelloDashboard() (2.8s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+When I click on the "Create new board" button&#xD;
+[13:16:27 INF] Attempting to click Create new Board&#xD;
+[13:16:27 INF] Clicked the 'Create new board' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheCreateNewBoardButton() (0.1s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+And I enter a valid board name "Test"&#xD;
+[13:16:27 INF] Attempting to enter board name.&#xD;
+[13:16:27 INF] Created board with name: Test&#xD;
+-&gt; done: BoardSteps.WhenIEnterAValidBoardName("Test") (0.1s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+And I click the "Create Board" button&#xD;
+[13:16:29 INF] Board created and redirected to board page.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCreateBoardButton() (1.5s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+Then I should see the newly created board in my list of boards&#xD;
+[13:16:29 INF] Verified the newly created board title: Test&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheNewlyCreatedBoardInMyListOfBoards() (0.0s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+And I should see the title "Test"&#xD;
+[13:16:29 INF] Verified the page title: Test | Trello&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheTitle("Test") (0.0s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+When I click the "Add a card" button&#xD;
+[13:16:29 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:16:31 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:16:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131631.png&#xD;
+And I enter the card name "TrelloAutomation"&#xD;
+[13:16:31 INF] Attempting to enter card name.&#xD;
+[13:16:32 INF] Entered card name: TrelloAutomation&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TrelloAutomation") (0.4s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:16:32 INF] Attempting to click 'Add card' button.&#xD;
+[13:16:32 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+Then I should see the card "TrelloAutomation" in the list of cards&#xD;
+[13:16:32 INF] Checking if the card 'TrelloAutomation' is displayed.&#xD;
+[13:16:32 INF] Verified that the card 'TrelloAutomation' is displayed in the list.&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheCardInTheListOfCards("TrelloAutomation") (0.0s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+[13:16:33 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="593a2029-dce0-487d-b3b2-89416301ea96" testId="8b9ec17c-40b9-0059-969c-ffecb42bc408" testName="AddACardToTheToDoListOnAnExistingTrelloBoard(&quot;Test API Card 1&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:04.1591090" startTime="2024-11-08T13:18:00.3378785+01:00" endTime="2024-11-08T13:18:04.4969473+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="593a2029-dce0-487d-b3b2-89416301ea96">
+      <Output>
+        <StdOut>[13:18:03 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:03 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:03 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Add a card to the To Do list on an existing Trello board\131803.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:04 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Add a card to the To Do list on an existing Trello board\131804.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card 1" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card 1"&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:04 INF] WebDriver instance has been quit.</StdOut>
+        <ErrorInfo>
+          <Message>System.Net.Http.HttpRequestException : Request failed with status code Unauthorized. Response: invalid key</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 86&#xD;
+   at TrelloAutomation.Tests.APITests.BoardApiSteps.WhenIRetrieveTheBoardIDFor(String boardName) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\BoardApiSteps.cs:line 103&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.ScenarioCleanup()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.AddACardToTheToDoListOnAnExistingTrelloBoard(String cardName, String[] exampleTags) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Features\BoardApiTests.feature:line 23&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2349d259-62ba-49fa-981c-50cec5482b04" testId="48568cfb-12e7-ce59-5491-21367f89f479" testName="LoginWithValidCredentials" computerName="DAFEHVLPP25791" duration="00:00:11.5669630" startTime="2024-11-08T13:17:42.4627321+01:00" endTime="2024-11-08T13:17:54.0295857+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2349d259-62ba-49fa-981c-50cec5482b04">
+      <Output>
+        <StdOut>[13:17:45 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:46 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (1.0s)&#xD;
+[13:17:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131747.png&#xD;
+When I click the "Log in" button&#xD;
+[13:17:47 INF] Clicked the 'Log in' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheLoginButton() (0.6s)&#xD;
+[13:17:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131747.png&#xD;
+And I enter my email&#xD;
+[13:17:47 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:48 INF] Entered email: neciparikan@gmail.com&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyEmail() (0.8s)&#xD;
+[13:17:49 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131749.png&#xD;
+And I click the "Continue" button&#xD;
+[13:17:49 INF] Clicked the 'Continue' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheContinueButton() (0.1s)&#xD;
+[13:17:49 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131749.png&#xD;
+And I enter my password&#xD;
+[13:17:49 INF] Entering password.&#xD;
+[13:17:50 INF] Entered password.&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyPassword() (1.2s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+And I submit login&#xD;
+[13:17:50 INF] Clicking login button.&#xD;
+[13:17:50 INF] Submitted login form.&#xD;
+-&gt; done: BoardSteps.WhenISubmitLogin() (0.0s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+And I continue without two-step verification if the button is visible&#xD;
+[13:17:50 INF] Continue without two-step verification button not visible.&#xD;
+-&gt; done: BoardSteps.WhenIContinueWithoutTwoStepVerificationIfVisible() (0.0s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+Then I should be redirected to the Trello dashboard&#xD;
+[13:17:53 INF] Successfully redirected to the Trello dashboard.&#xD;
+-&gt; done: BoardSteps.ThenIShouldBeRedirectedToTheTrelloDashboard() (2.6s)&#xD;
+[13:17:53 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131753.png&#xD;
+[13:17:54 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="443aa16a-d366-4ac6-8db6-ee3acde5a18c" testId="5fbeb9a9-d784-8600-d98d-f4012d880ba4" testName="DeleteTheCard(&quot;Test&quot;,&quot;TestCard3&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:19.7165310" startTime="2024-11-08T13:16:33.0837642+01:00" endTime="2024-11-08T13:16:52.8001133+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="443aa16a-d366-4ac6-8db6-ee3acde5a18c">
+      <Output>
+        <StdOut>[13:16:36 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:37 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:38 INF] Clicked the 'Log in' button.&#xD;
+[13:16:38 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:39 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:40 INF] Clicked the 'Continue' button.&#xD;
+[13:16:40 INF] Entering password.&#xD;
+[13:16:41 INF] Entered password.&#xD;
+[13:16:41 INF] Clicking login button.&#xD;
+[13:16:41 INF] Submitted login form.&#xD;
+[13:16:41 INF] Continue without two-step verification button not visible.&#xD;
+[13:16:41 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.4s)&#xD;
+[13:16:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131641.png&#xD;
+When I click on the "Test" board&#xD;
+[13:16:44 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.3s)&#xD;
+[13:16:45 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131645.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:16:45 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:16:47 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (2.0s)&#xD;
+[13:16:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131647.png&#xD;
+And I enter the card name "TestCard3"&#xD;
+[13:16:47 INF] Attempting to enter card name.&#xD;
+[13:16:47 INF] Entered card name: TestCard3&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard3") (0.1s)&#xD;
+[13:16:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131647.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:16:47 INF] Attempting to click 'Add card' button.&#xD;
+[13:16:48 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.4s)&#xD;
+[13:16:48 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131648.png&#xD;
+And I click the card input field for "TestCard3"&#xD;
+[13:16:49 INF] Clicked on the card: TestCard3&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard3") (1.5s)&#xD;
+[13:16:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131650.png&#xD;
+When I click the "Archive" button&#xD;
+[13:16:51 INF] Clicked the 'Archive' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheArchiveButton() (0.3s)&#xD;
+[13:16:51 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131651.png&#xD;
+And I click the "Delete" button&#xD;
+[13:16:51 INF] Clicked the 'Delete' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheDeleteButton() (0.6s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+And I confirm the deletion&#xD;
+[13:16:52 INF] Confirmed the deletion of the card.&#xD;
+-&gt; done: BoardSteps.WhenIConfirmTheDeletion() (0.2s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+Then I should not see the card "TestCard3" in the "To Do" list&#xD;
+[13:16:52 INF] Verified that the card 'TestCard3' is not present in the 'To Do' list.&#xD;
+-&gt; done: BoardSteps.ThenIShouldNotSeeTheCardInTheList("TestCard3", "To Do") (0.0s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+[13:16:52 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b4467e60-0a03-432a-b6c5-578bf997dd82" testId="d375e054-5f39-7d1c-0c10-f52696995afa" testName="UpdateTheCardStatus(&quot;Test&quot;,&quot;TestCard2&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:20.4909930" startTime="2024-11-08T13:17:12.0509836+01:00" endTime="2024-11-08T13:17:32.5417850+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4467e60-0a03-432a-b6c5-578bf997dd82">
+      <Output>
+        <StdOut>[13:17:15 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:17:16 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:17:17 INF] Clicked the 'Log in' button.&#xD;
+[13:17:17 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:18 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:17:18 INF] Clicked the 'Continue' button.&#xD;
+[13:17:18 INF] Entering password.&#xD;
+[13:17:19 INF] Entered password.&#xD;
+[13:17:19 INF] Clicking login button.&#xD;
+[13:17:19 INF] Submitted login form.&#xD;
+[13:17:19 INF] Continue without two-step verification button not visible.&#xD;
+[13:17:19 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.3s)&#xD;
+[13:17:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131720.png&#xD;
+When I click on the "Test" board&#xD;
+[13:17:23 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.8s)&#xD;
+[13:17:24 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131724.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:17:24 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:17:26 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:17:26 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131726.png&#xD;
+And I enter the card name "TestCard2"&#xD;
+[13:17:26 INF] Attempting to enter card name.&#xD;
+[13:17:26 INF] Entered card name: TestCard2&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard2") (0.1s)&#xD;
+[13:17:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131727.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:17:27 INF] Attempting to click 'Add card' button.&#xD;
+[13:17:27 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:17:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131727.png&#xD;
+And I click the card input field for "TestCard2"&#xD;
+[13:17:29 INF] Clicked on the card: TestCard2&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard2") (2.0s)&#xD;
+[13:17:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131729.png&#xD;
+When I click the "To Do" dropdown button&#xD;
+[13:17:29 INF] Attempting to click the 'To Do' dropdown button.&#xD;
+[13:17:30 INF] Clicked the 'To Do' dropdown button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheToDoButton() (0.7s)&#xD;
+[13:17:30 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131730.png&#xD;
+And I select "Doing"&#xD;
+[13:17:30 INF] Attempting to select 'Doing' from the dropdown.&#xD;
+[13:17:31 INF] Clicked the dropdown to open options.&#xD;
+[13:17:31 INF] Selected 'Doing' from the dropdown using keyboard navigation.&#xD;
+-&gt; done: BoardSteps.WhenISelect("Doing") (0.5s)&#xD;
+[13:17:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131731.png&#xD;
+And I click the "Move" button&#xD;
+[13:17:31 INF] Clicked the 'Move' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheMoveButton() (0.1s)&#xD;
+[13:17:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131731.png&#xD;
+When I close the card details window&#xD;
+[13:17:31 INF] Closed the card details window.&#xD;
+-&gt; done: BoardSteps.WhenICloseTheCardDetailsWindow() (0.1s)&#xD;
+[13:17:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131732.png&#xD;
+Then I should see the card "TestCard2" in the "Doing" list&#xD;
+[13:17:32 INF] Checking if the card 'TestCard2' is displayed in the 'Doing' list.&#xD;
+[13:17:32 INF] Verified that the card 'TestCard2' is displayed in the list 'Doing'.&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheCardInTheList("TestCard2", "Doing") (0.0s)&#xD;
+[13:17:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131732.png&#xD;
+[13:17:32 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf4197c2-94ad-427f-8245-eadf09bc4421" testId="2f865494-d798-4c1c-a531-4e088dc243cc" testName="DeleteACardFromTheBoard(&quot;Test API Card for Delete&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:04.0181050" startTime="2024-11-08T13:18:12.8242582+01:00" endTime="2024-11-08T13:18:16.8423254+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf4197c2-94ad-427f-8245-eadf09bc4421">
+      <Output>
+        <StdOut>[13:18:16 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:16 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:16 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete a card from the board\131816.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:16 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete a card from the board\131816.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card for Delete" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card for Delete"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I delete the card with the name "Test API Card for Delete"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was deleted&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card "Test API Card for Delete" should not be present in the "To Do" list (API)&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:16 INF] WebDriver instance has been quit.</StdOut>
+        <ErrorInfo>
+          <Message>System.Net.Http.HttpRequestException : Request failed with status code Unauthorized. Response: invalid key</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 86&#xD;
+   at TrelloAutomation.Tests.APITests.BoardApiSteps.WhenIRetrieveTheBoardIDFor(String boardName) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\BoardApiSteps.cs:line 103&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.ScenarioCleanup()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.DeleteACardFromTheBoard(String cardName, String[] exampleTags) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Features\BoardApiTests.feature:line 69&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="987fc7d4-f078-4bb1-bb3b-06346dc9cc85" testId="a2b74bc1-8ad5-917d-bbcc-2a3b2f5fa532" testName="CreateCard_ShouldReturnCreatedCard" computerName="DAFEHVLPP25791" duration="00:00:00.0026830" startTime="2024-11-08T13:18:20.8402030+01:00" endTime="2024-11-08T13:18:20.8428854+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="987fc7d4-f078-4bb1-bb3b-06346dc9cc85">
+      <Output>
+        <StdOut>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateCard_ShouldReturnCreatedCard&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId</StdOut>
+        <ErrorInfo>
+          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 78&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.GetBoardId_ShouldReturnBoardId() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 72&#xD;
+   at TrelloAutomation.Tests.APITests.TrelloApiTests.CreateCard_ShouldReturnCreatedCard() in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\TrelloApiTests.cs:line 117&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.GetResult()&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fea5e164-0296-4be9-8e5c-e709d07908da" testId="4d410a88-dcf8-b57a-431a-066b7775123d" testName="VerifyHomePageTitle" computerName="DAFEHVLPP25791" duration="00:00:06.3074769" startTime="2024-11-08T13:17:54.0296202+01:00" endTime="2024-11-08T13:18:00.3370370+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fea5e164-0296-4be9-8e5c-e709d07908da">
+      <Output>
+        <StdOut>[13:17:58 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:59 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (0.9s)&#xD;
+[13:17:59 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Verify Home Page Title\131759.png&#xD;
+Then I should see the title "Manage Your Team’s Projects From Anywhere"&#xD;
+[13:17:59 INF] Verified the page title: Manage Your Team’s Projects From Anywhere | Trello&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheTitle("Manage Your Team’...") (0.1s)&#xD;
+[13:18:00 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Verify Home Page Title\131800.png&#xD;
+[13:18:00 INF] WebDriver instance has been quit.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b5793711-1188-4d13-8f6f-7428a97efef0" testId="dc8d6f20-4f23-403c-9619-00f0048f11b3" testName="CreateANewCardAndVerifyTheReadAction(&quot;Test API Card 2&quot;,null)" computerName="DAFEHVLPP25791" duration="00:00:04.2302609" startTime="2024-11-08T13:18:04.4971407+01:00" endTime="2024-11-08T13:18:08.7273615+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5793711-1188-4d13-8f6f-7428a97efef0">
+      <Output>
+        <StdOut>[13:18:08 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:08 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new card and verify the read action\131808.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new card and verify the read action\131808.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card 2" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card 2"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I get the details of the card with the name "Test API Card 2"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then the details should match the expected values&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:08 INF] WebDriver instance has been quit.</StdOut>
+        <ErrorInfo>
+          <Message>System.Net.Http.HttpRequestException : Request failed with status code Unauthorized. Response: invalid key</Message>
+          <StackTrace>   at TrelloAutomation.Helpers.ApiHelper.GetAsync(String endpoint) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Helpers\ApiHelper.cs:line 86&#xD;
+   at TrelloAutomation.Tests.APITests.BoardApiSteps.WhenIRetrieveTheBoardIDFor(String boardName) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Tests\APITests\BoardApiSteps.cs:line 103&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.&lt;&gt;c__DisplayClass2_0.&lt;&lt;InvokeBindingDelegateAsync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.&lt;&gt;c__DisplayClass1_0`1.&lt;&lt;RunSync&gt;b__0&gt;d.MoveNext()&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.ExclusiveSynchronizationContext.BeginMessageLoop()&#xD;
+   at TechTalk.SpecFlow.Bindings.AsyncHelpers.RunSync[T](Func`1 task)&#xD;
+   at TechTalk.SpecFlow.Bindings.SynchronousBindingDelegateInvoker.InvokeBindingDelegateAsync(Delegate bindingDelegate, Object[] invokeArgs)&#xD;
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan&amp; duration)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)&#xD;
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()&#xD;
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.ScenarioCleanup()&#xD;
+   at TrelloAutomation.Features.TrelloBoardAPIFeature.CreateANewCardAndVerifyTheReadAction(String cardName, String[] exampleTags) in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\Features\BoardApiTests.feature:line 38&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetBoardId_ShouldReturnBoardId" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="3a8afd61-5f4e-40d0-662c-05ff10471ffa">
+      <Execution id="d1d36f54-a051-451d-a9b6-d0ac571ab097" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Tests.APITests.TrelloApiTests" name="GetBoardId_ShouldReturnBoardId" />
+    </UnitTest>
+    <UnitTest name="DeleteCard_ShouldReturnDeletedCardResponse" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="ff2222d8-3cd9-b2d3-2c50-3d7e00aa0ef2">
+      <Execution id="ced90e1b-163b-41c2-a60b-4c515a65d139" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Tests.APITests.TrelloApiTests" name="DeleteCard_ShouldReturnDeletedCardResponse" />
+    </UnitTest>
+    <UnitTest name="AddACardToTheToDoListOnAnExistingTrelloBoard(&quot;Test API Card 1&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="8b9ec17c-40b9-0059-969c-ffecb42bc408">
+      <Execution id="593a2029-dce0-487d-b3b2-89416301ea96" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.TrelloBoardAPIFeature" name="AddACardToTheToDoListOnAnExistingTrelloBoard(&quot;Test API Card 1&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="CreateCard_ShouldReturnCreatedCard" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="a2b74bc1-8ad5-917d-bbcc-2a3b2f5fa532">
+      <Execution id="987fc7d4-f078-4bb1-bb3b-06346dc9cc85" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Tests.APITests.TrelloApiTests" name="CreateCard_ShouldReturnCreatedCard" />
+    </UnitTest>
+    <UnitTest name="UpdateTheCardStatus(&quot;Test&quot;,&quot;TestCard2&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="d375e054-5f39-7d1c-0c10-f52696995afa">
+      <Execution id="b4467e60-0a03-432a-b6c5-578bf997dd82" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.BoardManagementFunctionalityFeature" name="UpdateTheCardStatus(&quot;Test&quot;,&quot;TestCard2&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="VerifyHomePageTitle" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="4d410a88-dcf8-b57a-431a-066b7775123d">
+      <Execution id="fea5e164-0296-4be9-8e5c-e709d07908da" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.LoginFunctionalityFeature" name="VerifyHomePageTitle" />
+    </UnitTest>
+    <UnitTest name="CreateList_ShouldReturnCreatedList" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="bfa48150-e846-3e46-9f80-c0cfff9318cb">
+      <Execution id="c34d20f3-3895-4890-a0e1-fa07a7e1ead7" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Tests.APITests.TrelloApiTests" name="CreateList_ShouldReturnCreatedList" />
+    </UnitTest>
+    <UnitTest name="CreateANewCardAndVerifyTheReadAction(&quot;Test API Card 2&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="dc8d6f20-4f23-403c-9619-00f0048f11b3">
+      <Execution id="b5793711-1188-4d13-8f6f-7428a97efef0" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.TrelloBoardAPIFeature" name="CreateANewCardAndVerifyTheReadAction(&quot;Test API Card 2&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="LoginWithInvalidCredentials" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="eda02b5a-9b0f-4f30-b5cc-b6731d5a0f98">
+      <Execution id="eec30ba1-df8f-4c6f-ab28-7403a0c6e3d4" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.LoginFunctionalityFeature" name="LoginWithInvalidCredentials" />
+    </UnitTest>
+    <UnitTest name="CreateBoard_ShouldReturnCreatedBoard" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="e3645806-7dfc-df15-e160-1c3096d21f60">
+      <Execution id="3dce1bab-bd75-45d3-8aed-1350ab8610f4" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Tests.APITests.TrelloApiTests" name="CreateBoard_ShouldReturnCreatedBoard" />
+    </UnitTest>
+    <UnitTest name="DeleteTheCard(&quot;Test&quot;,&quot;TestCard3&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="5fbeb9a9-d784-8600-d98d-f4012d880ba4">
+      <Execution id="443aa16a-d366-4ac6-8db6-ee3acde5a18c" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.BoardManagementFunctionalityFeature" name="DeleteTheCard(&quot;Test&quot;,&quot;TestCard3&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="CreateANewTrelloBoardAndAddACard(&quot;Test&quot;,&quot;Test&quot;,&quot;TrelloAutomation&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="6ac23fcf-02be-b1a7-e0a4-ab8b9e32dadd">
+      <Execution id="f40399d5-7b11-4e4c-86c3-92724cf21bfc" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.BoardManagementFunctionalityFeature" name="CreateANewTrelloBoardAndAddACard(&quot;Test&quot;,&quot;Test&quot;,&quot;TrelloAutomation&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="ReadTheTrelloCardDetails(&quot;Test&quot;,&quot;TestCard1&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="f6511cf9-cb26-0bfc-7ad3-bf8ecfbfa69e">
+      <Execution id="470f19e7-64a0-44d2-8eed-f3532a80e7d4" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.BoardManagementFunctionalityFeature" name="ReadTheTrelloCardDetails(&quot;Test&quot;,&quot;TestCard1&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="DeleteACardFromTheBoard(&quot;Test API Card for Delete&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="2f865494-d798-4c1c-a531-4e088dc243cc">
+      <Execution id="bf4197c2-94ad-427f-8245-eadf09bc4421" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.TrelloBoardAPIFeature" name="DeleteACardFromTheBoard(&quot;Test API Card for Delete&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="UpdateTheStatusOfACard(&quot;Test API Card for Update&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="6bbb82e3-c43e-a30e-a44a-c2dd5d694bbd">
+      <Execution id="3e52e996-7a40-4b2e-af6a-1a724aa3d0d1" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.TrelloBoardAPIFeature" name="UpdateTheStatusOfACard(&quot;Test API Card for Update&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="CreateANewTrelloBoardAndACardOnIt(&quot;Test Board from API&quot;,null)" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="d01295e6-47fd-1bdd-f0e9-ccdb22a5b852">
+      <Execution id="55fa8423-da04-42ea-8522-47ac60e17666" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.TrelloBoardAPIFeature" name="CreateANewTrelloBoardAndACardOnIt(&quot;Test Board from API&quot;,null)" />
+    </UnitTest>
+    <UnitTest name="LoginWithValidCredentials" storage="c:\users\necip.arikan\trelloautomation\trelloautomation\bin\debug\net8.0\trelloautomation.dll" id="48568cfb-12e7-ce59-5491-21367f89f479">
+      <Execution id="2349d259-62ba-49fa-981c-50cec5482b04" />
+      <TestMethod codeBase="C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll" adapterTypeName="executor://nunit3testexecutor/" className="TrelloAutomation.Features.LoginFunctionalityFeature" name="LoginWithValidCredentials" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="e3645806-7dfc-df15-e160-1c3096d21f60" executionId="3dce1bab-bd75-45d3-8aed-1350ab8610f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfa48150-e846-3e46-9f80-c0cfff9318cb" executionId="c34d20f3-3895-4890-a0e1-fa07a7e1ead7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6bbb82e3-c43e-a30e-a44a-c2dd5d694bbd" executionId="3e52e996-7a40-4b2e-af6a-1a724aa3d0d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d01295e6-47fd-1bdd-f0e9-ccdb22a5b852" executionId="55fa8423-da04-42ea-8522-47ac60e17666" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eda02b5a-9b0f-4f30-b5cc-b6731d5a0f98" executionId="eec30ba1-df8f-4c6f-ab28-7403a0c6e3d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a8afd61-5f4e-40d0-662c-05ff10471ffa" executionId="d1d36f54-a051-451d-a9b6-d0ac571ab097" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff2222d8-3cd9-b2d3-2c50-3d7e00aa0ef2" executionId="ced90e1b-163b-41c2-a60b-4c515a65d139" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6511cf9-cb26-0bfc-7ad3-bf8ecfbfa69e" executionId="470f19e7-64a0-44d2-8eed-f3532a80e7d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ac23fcf-02be-b1a7-e0a4-ab8b9e32dadd" executionId="f40399d5-7b11-4e4c-86c3-92724cf21bfc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b9ec17c-40b9-0059-969c-ffecb42bc408" executionId="593a2029-dce0-487d-b3b2-89416301ea96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48568cfb-12e7-ce59-5491-21367f89f479" executionId="2349d259-62ba-49fa-981c-50cec5482b04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fbeb9a9-d784-8600-d98d-f4012d880ba4" executionId="443aa16a-d366-4ac6-8db6-ee3acde5a18c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d375e054-5f39-7d1c-0c10-f52696995afa" executionId="b4467e60-0a03-432a-b6c5-578bf997dd82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f865494-d798-4c1c-a531-4e088dc243cc" executionId="bf4197c2-94ad-427f-8245-eadf09bc4421" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2b74bc1-8ad5-917d-bbcc-2a3b2f5fa532" executionId="987fc7d4-f078-4bb1-bb3b-06346dc9cc85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d410a88-dcf8-b57a-431a-066b7775123d" executionId="fea5e164-0296-4be9-8e5c-e709d07908da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc8d6f20-4f23-403c-9619-00f0048f11b3" executionId="b5793711-1188-4d13-8f6f-7428a97efef0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="7" failed="10" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.5.0.0: Test execution started&#xD;
+Running all tests in C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\TrelloAutomation.dll&#xD;
+   NUnit3TestExecutor discovered 17 of 17 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58366&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58486&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58590&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58691&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58795&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58874&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 58971&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 59013&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 59029&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 59043&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 59059&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+Starting ChromeDriver 118.0.5993.70 (e52f33f30b91b4ddfad649acddc39ab570473b86-refs/branch-heads/5993@{#1216}) on port 59076&#xD;
+Only local connections are allowed.&#xD;
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.&#xD;
+ChromeDriver was started successfully.&#xD;
+NUnit Adapter 4.5.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:16:33.1068939+01:00">
+        <Text>[13:16:18 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:20 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:20 INF] Clicked the 'Log in' button.&#xD;
+[13:16:20 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:22 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:22 INF] Clicked the 'Continue' button.&#xD;
+[13:16:22 INF] Entering password.&#xD;
+[13:16:24 INF] Entered password.&#xD;
+[13:16:24 INF] Clicking login button.&#xD;
+[13:16:24 INF] Submitted login form.&#xD;
+[13:16:24 INF] Continue without two-step verification button not visible.&#xD;
+[13:16:24 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (5.4s)&#xD;
+[13:16:24 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131624.png&#xD;
+Then I should be redirected to the Trello dashboard&#xD;
+[13:16:27 INF] Successfully redirected to the Trello dashboard.&#xD;
+-&gt; done: BoardSteps.ThenIShouldBeRedirectedToTheTrelloDashboard() (2.8s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+When I click on the "Create new board" button&#xD;
+[13:16:27 INF] Attempting to click Create new Board&#xD;
+[13:16:27 INF] Clicked the 'Create new board' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheCreateNewBoardButton() (0.1s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+And I enter a valid board name "Test"&#xD;
+[13:16:27 INF] Attempting to enter board name.&#xD;
+[13:16:27 INF] Created board with name: Test&#xD;
+-&gt; done: BoardSteps.WhenIEnterAValidBoardName("Test") (0.1s)&#xD;
+[13:16:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131627.png&#xD;
+And I click the "Create Board" button&#xD;
+[13:16:29 INF] Board created and redirected to board page.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCreateBoardButton() (1.5s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+Then I should see the newly created board in my list of boards&#xD;
+[13:16:29 INF] Verified the newly created board title: Test&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheNewlyCreatedBoardInMyListOfBoards() (0.0s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+And I should see the title "Test"&#xD;
+[13:16:29 INF] Verified the page title: Test | Trello&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheTitle("Test") (0.0s)&#xD;
+[13:16:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131629.png&#xD;
+When I click the "Add a card" button&#xD;
+[13:16:29 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:16:31 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:16:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131631.png&#xD;
+And I enter the card name "TrelloAutomation"&#xD;
+[13:16:31 INF] Attempting to enter card name.&#xD;
+[13:16:32 INF] Entered card name: TrelloAutomation&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TrelloAutomation") (0.4s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:16:32 INF] Attempting to click 'Add card' button.&#xD;
+[13:16:32 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+Then I should see the card "TrelloAutomation" in the list of cards&#xD;
+[13:16:32 INF] Checking if the card 'TrelloAutomation' is displayed.&#xD;
+[13:16:32 INF] Verified that the card 'TrelloAutomation' is displayed in the list.&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheCardInTheListOfCards("TrelloAutomation") (0.0s)&#xD;
+[13:16:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and add a card\131632.png&#xD;
+[13:16:33 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:16:52.8090571+01:00">
+        <Text>[13:16:36 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:37 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:38 INF] Clicked the 'Log in' button.&#xD;
+[13:16:38 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:39 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:40 INF] Clicked the 'Continue' button.&#xD;
+[13:16:40 INF] Entering password.&#xD;
+[13:16:41 INF] Entered password.&#xD;
+[13:16:41 INF] Clicking login button.&#xD;
+[13:16:41 INF] Submitted login form.&#xD;
+[13:16:41 INF] Continue without two-step verification button not visible.&#xD;
+[13:16:41 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.4s)&#xD;
+[13:16:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131641.png&#xD;
+When I click on the "Test" board&#xD;
+[13:16:44 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.3s)&#xD;
+[13:16:45 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131645.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:16:45 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:16:47 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (2.0s)&#xD;
+[13:16:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131647.png&#xD;
+And I enter the card name "TestCard3"&#xD;
+[13:16:47 INF] Attempting to enter card name.&#xD;
+[13:16:47 INF] Entered card name: TestCard3&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard3") (0.1s)&#xD;
+[13:16:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131647.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:16:47 INF] Attempting to click 'Add card' button.&#xD;
+[13:16:48 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.4s)&#xD;
+[13:16:48 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131648.png&#xD;
+And I click the card input field for "TestCard3"&#xD;
+[13:16:49 INF] Clicked on the card: TestCard3&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard3") (1.5s)&#xD;
+[13:16:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131650.png&#xD;
+When I click the "Archive" button&#xD;
+[13:16:51 INF] Clicked the 'Archive' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheArchiveButton() (0.3s)&#xD;
+[13:16:51 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131651.png&#xD;
+And I click the "Delete" button&#xD;
+[13:16:51 INF] Clicked the 'Delete' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheDeleteButton() (0.6s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+And I confirm the deletion&#xD;
+[13:16:52 INF] Confirmed the deletion of the card.&#xD;
+-&gt; done: BoardSteps.WhenIConfirmTheDeletion() (0.2s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+Then I should not see the card "TestCard3" in the "To Do" list&#xD;
+[13:16:52 INF] Verified that the card 'TestCard3' is not present in the 'To Do' list.&#xD;
+-&gt; done: BoardSteps.ThenIShouldNotSeeTheCardInTheList("TestCard3", "To Do") (0.0s)&#xD;
+[13:16:52 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete the card\131652.png&#xD;
+[13:16:52 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:17:12.0604247+01:00">
+        <Text>[13:16:56 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:16:57 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:16:58 INF] Clicked the 'Log in' button.&#xD;
+[13:16:58 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:16:59 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:16:59 INF] Clicked the 'Continue' button.&#xD;
+[13:16:59 INF] Entering password.&#xD;
+[13:17:01 INF] Entered password.&#xD;
+[13:17:01 INF] Clicking login button.&#xD;
+[13:17:01 INF] Submitted login form.&#xD;
+[13:17:01 INF] Continue without two-step verification button not visible.&#xD;
+[13:17:01 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.6s)&#xD;
+[13:17:01 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131701.png&#xD;
+When I click on the "Test" board&#xD;
+[13:17:04 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.5s)&#xD;
+[13:17:05 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131705.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:17:05 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:17:07 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:17:07 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131707.png&#xD;
+And I enter the card name "TestCard1"&#xD;
+[13:17:07 INF] Attempting to enter card name.&#xD;
+[13:17:07 INF] Entered card name: TestCard1&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard1") (0.1s)&#xD;
+[13:17:07 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131707.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:17:07 INF] Attempting to click 'Add card' button.&#xD;
+[13:17:07 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:17:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131708.png&#xD;
+And I click the card input field for "TestCard1"&#xD;
+[13:17:09 INF] Clicked on the card: TestCard1&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard1") (1.7s)&#xD;
+[13:17:10 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131710.png&#xD;
+Then I should see the information containing "necip added this card to To Do"&#xD;
+[13:17:10 INF] Verified information on the card contains: necip added this card to To Do&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheInformationContaining("necip added this ...") (0.3s)&#xD;
+[13:17:11 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Read the Trello card details\131711.png&#xD;
+[13:17:12 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:17:32.5502348+01:00">
+        <Text>[13:17:15 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I am logged into Trello&#xD;
+[13:17:16 INF] Navigated to Trello home page at https://trello.com&#xD;
+[13:17:17 INF] Clicked the 'Log in' button.&#xD;
+[13:17:17 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:18 INF] Entered email: neciparikan@gmail.com&#xD;
+[13:17:18 INF] Clicked the 'Continue' button.&#xD;
+[13:17:18 INF] Entering password.&#xD;
+[13:17:19 INF] Entered password.&#xD;
+[13:17:19 INF] Clicking login button.&#xD;
+[13:17:19 INF] Submitted login form.&#xD;
+[13:17:19 INF] Continue without two-step verification button not visible.&#xD;
+[13:17:19 INF] User logged into Trello successfully.&#xD;
+-&gt; done: BoardSteps.GivenIAmLoggedIntoTrello() (4.3s)&#xD;
+[13:17:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131720.png&#xD;
+When I click on the "Test" board&#xD;
+[13:17:23 INF] Clicked on the board: Test&#xD;
+-&gt; done: BoardSteps.WhenIClickOnTheBoard("Test") (3.8s)&#xD;
+[13:17:24 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131724.png&#xD;
+And I click the "Add a card" button&#xD;
+[13:17:24 INF] Attempting to click 'Add a card' button in 'To Do' section.&#xD;
+[13:17:26 INF] Clicked the 'Add a card' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheAddACardButton() (1.9s)&#xD;
+[13:17:26 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131726.png&#xD;
+And I enter the card name "TestCard2"&#xD;
+[13:17:26 INF] Attempting to enter card name.&#xD;
+[13:17:26 INF] Entered card name: TestCard2&#xD;
+-&gt; done: BoardSteps.WhenIEnterTheCardName("TestCard2") (0.1s)&#xD;
+[13:17:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131727.png&#xD;
+And I click the "Save" button to create the card&#xD;
+[13:17:27 INF] Attempting to click 'Add card' button.&#xD;
+[13:17:27 INF] Clicked the 'Save' button to create the card.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheSaveButtonToCreateTheCard() (0.1s)&#xD;
+[13:17:27 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131727.png&#xD;
+And I click the card input field for "TestCard2"&#xD;
+[13:17:29 INF] Clicked on the card: TestCard2&#xD;
+-&gt; done: BoardSteps.WhenIClickTheCardInputFieldFor("TestCard2") (2.0s)&#xD;
+[13:17:29 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131729.png&#xD;
+When I click the "To Do" dropdown button&#xD;
+[13:17:29 INF] Attempting to click the 'To Do' dropdown button.&#xD;
+[13:17:30 INF] Clicked the 'To Do' dropdown button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheToDoButton() (0.7s)&#xD;
+[13:17:30 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131730.png&#xD;
+And I select "Doing"&#xD;
+[13:17:30 INF] Attempting to select 'Doing' from the dropdown.&#xD;
+[13:17:31 INF] Clicked the dropdown to open options.&#xD;
+[13:17:31 INF] Selected 'Doing' from the dropdown using keyboard navigation.&#xD;
+-&gt; done: BoardSteps.WhenISelect("Doing") (0.5s)&#xD;
+[13:17:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131731.png&#xD;
+And I click the "Move" button&#xD;
+[13:17:31 INF] Clicked the 'Move' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheMoveButton() (0.1s)&#xD;
+[13:17:31 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131731.png&#xD;
+When I close the card details window&#xD;
+[13:17:31 INF] Closed the card details window.&#xD;
+-&gt; done: BoardSteps.WhenICloseTheCardDetailsWindow() (0.1s)&#xD;
+[13:17:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131732.png&#xD;
+Then I should see the card "TestCard2" in the "Doing" list&#xD;
+[13:17:32 INF] Checking if the card 'TestCard2' is displayed in the 'Doing' list.&#xD;
+[13:17:32 INF] Verified that the card 'TestCard2' is displayed in the list 'Doing'.&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheCardInTheList("TestCard2", "Doing") (0.0s)&#xD;
+[13:17:32 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the card status\131732.png&#xD;
+[13:17:32 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:17:42.4680016+01:00">
+        <Text>[13:17:36 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:37 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (1.0s)&#xD;
+[13:17:37 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131737.png&#xD;
+When I click the "Log in" button&#xD;
+[13:17:38 INF] Clicked the 'Log in' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheLoginButton() (0.7s)&#xD;
+[13:17:38 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131738.png&#xD;
+And I enter my email&#xD;
+[13:17:38 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:39 INF] Entered email: neciparikan@gmail.com&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyEmail() (1.0s)&#xD;
+[13:17:39 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131739.png&#xD;
+And I click the "Continue" button&#xD;
+[13:17:39 INF] Clicked the 'Continue' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheContinueButton() (0.1s)&#xD;
+[13:17:39 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131739.png&#xD;
+And I enter wrong password&#xD;
+[13:17:39 INF] Entering password.&#xD;
+[13:17:41 INF] Entered invalid password for testing.&#xD;
+-&gt; done: BoardSteps.WhenIEnterWrongPassword() (1.1s)&#xD;
+[13:17:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131741.png&#xD;
+And I submit login&#xD;
+[13:17:41 INF] Clicking login button.&#xD;
+[13:17:41 INF] Submitted login form.&#xD;
+-&gt; done: BoardSteps.WhenISubmitLogin() (0.1s)&#xD;
+[13:17:41 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131741.png&#xD;
+Then I should see an error message containing "Incorrect email address and / or password"&#xD;
+[13:17:42 INF] Verified error message containing: Incorrect email address and / or password&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeAnErrorMessageContaining("Incorrect email a...") (0.6s)&#xD;
+[13:17:42 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with invalid credentials\131742.png&#xD;
+[13:17:42 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:17:54.0351325+01:00">
+        <Text>[13:17:45 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:46 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (1.0s)&#xD;
+[13:17:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131747.png&#xD;
+When I click the "Log in" button&#xD;
+[13:17:47 INF] Clicked the 'Log in' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheLoginButton() (0.6s)&#xD;
+[13:17:47 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131747.png&#xD;
+And I enter my email&#xD;
+[13:17:47 INF] Entering email: neciparikan@gmail.com&#xD;
+[13:17:48 INF] Entered email: neciparikan@gmail.com&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyEmail() (0.8s)&#xD;
+[13:17:49 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131749.png&#xD;
+And I click the "Continue" button&#xD;
+[13:17:49 INF] Clicked the 'Continue' button.&#xD;
+-&gt; done: BoardSteps.WhenIClickTheContinueButton() (0.1s)&#xD;
+[13:17:49 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131749.png&#xD;
+And I enter my password&#xD;
+[13:17:49 INF] Entering password.&#xD;
+[13:17:50 INF] Entered password.&#xD;
+-&gt; done: BoardSteps.WhenIEnterMyPassword() (1.2s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+And I submit login&#xD;
+[13:17:50 INF] Clicking login button.&#xD;
+[13:17:50 INF] Submitted login form.&#xD;
+-&gt; done: BoardSteps.WhenISubmitLogin() (0.0s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+And I continue without two-step verification if the button is visible&#xD;
+[13:17:50 INF] Continue without two-step verification button not visible.&#xD;
+-&gt; done: BoardSteps.WhenIContinueWithoutTwoStepVerificationIfVisible() (0.0s)&#xD;
+[13:17:50 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131750.png&#xD;
+Then I should be redirected to the Trello dashboard&#xD;
+[13:17:53 INF] Successfully redirected to the Trello dashboard.&#xD;
+-&gt; done: BoardSteps.ThenIShouldBeRedirectedToTheTrelloDashboard() (2.6s)&#xD;
+[13:17:53 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Login with valid credentials\131753.png&#xD;
+[13:17:54 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:00.3396709+01:00">
+        <Text>[13:17:58 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I navigate to the Trello home page&#xD;
+[13:17:59 INF] Navigated to Trello home page at https://trello.com&#xD;
+-&gt; done: BoardSteps.GivenINavigateToTheTrelloHomePage() (0.9s)&#xD;
+[13:17:59 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Verify Home Page Title\131759.png&#xD;
+Then I should see the title "Manage Your Team’s Projects From Anywhere"&#xD;
+[13:17:59 INF] Verified the page title: Manage Your Team’s Projects From Anywhere | Trello&#xD;
+-&gt; done: BoardSteps.ThenIShouldSeeTheTitle("Manage Your Team’...") (0.1s)&#xD;
+[13:18:00 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Verify Home Page Title\131800.png&#xD;
+[13:18:00 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:04.5024309+01:00">
+        <Text>[13:18:03 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:03 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:03 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Add a card to the To Do list on an existing Trello board\131803.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:04 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Add a card to the To Do list on an existing Trello board\131804.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card 1" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card 1"&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:04 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:08.7305433+01:00">
+        <Text>[13:18:08 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:08 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new card and verify the read action\131808.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:08 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new card and verify the read action\131808.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card 2" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card 2"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I get the details of the card with the name "Test API Card 2"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then the details should match the expected values&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:08 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:12.8273666+01:00">
+        <Text>[13:18:12 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:12 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:12 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and a card on it\131812.png&#xD;
+When I create a board with the name "Test Board from API"&#xD;
+API Key: your_api_key&#xD;
+API Token: your_api_token&#xD;
+Request URL: boards/?key=your_api_key&amp;token=your_api_token&#xD;
+Error Response: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.3s)&#xD;
+[13:18:12 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Create a new Trello board and a card on it\131812.png&#xD;
+Then I should receive a response indicating the board was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the board name should be "Test Board from API"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:12 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:16.8457393+01:00">
+        <Text>[13:18:16 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:16 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:16 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete a card from the board\131816.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:16 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Delete a card from the board\131816.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card for Delete" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card for Delete"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I delete the card with the name "Test API Card for Delete"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was deleted&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card "Test API Card for Delete" should not be present in the "To Do" list (API)&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:16 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8347332+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+Given I have a valid API key and token&#xD;
+[13:18:20 INF] Valid API key and token are present.&#xD;
+-&gt; done: BoardApiSteps.GivenIHaveAValidApiKeyAndToken() (0.0s)&#xD;
+[13:18:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the status of a card\131820.png&#xD;
+When I retrieve the board ID for "Test Board from API"&#xD;
+Request URL: members/me/boards?key=your_api_key&amp;token=your_api_token&#xD;
+Response Body: invalid key&#xD;
+-&gt; error: Request failed with status code Unauthorized. Response: invalid key (0.2s)&#xD;
+[13:18:20 INF] Screenshot saved: C:\Users\necip.arikan\TrelloAutomation\TrelloAutomation\bin\Debug\net8.0\Screenshots\20241108\Update the status of a card\131820.png&#xD;
+Then I should receive a response containing the board ID&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I create a card with the name "Test API Card for Update" in the "To Do" list&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should receive a response indicating the card was created&#xD;
+-&gt; skipped because of previous errors&#xD;
+And the card name should be "Test API Card for Update"&#xD;
+-&gt; skipped because of previous errors&#xD;
+When I update the card status to "Doing"&#xD;
+-&gt; skipped because of previous errors&#xD;
+Then I should see the card "Test API Card for Update" present in the "Doing" list (API)&#xD;
+-&gt; skipped because of previous errors&#xD;
+[13:18:20 INF] WebDriver instance has been quit.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8423839+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateBoard_ShouldReturnCreatedBoard&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8443005+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateCard_ShouldReturnCreatedCard&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8458777+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: CreateList_ShouldReturnCreatedList&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8486508+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: DeleteCard_ShouldReturnDeletedCardResponse&#xD;
+[13:18:20 INF] Starting test: CreateCard_ShouldReturnCreatedCard&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="DAFEHVLPP25791" outcome="Warning" timestamp="2024-11-08T13:18:20.8517047+01:00">
+        <Text>[13:18:20 INF] Setup completed: ApiHelper initialized.&#xD;
+[13:18:20 INF] Starting test: GetBoardId_ShouldReturnBoardId&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

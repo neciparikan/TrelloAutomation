@@ -1,0 +1,24 @@
+{
+  "specFlow": {
+    "unitTestProvider": {
+      "name": "NUnit"
+    },
+    "generator": {
+      "allowDebugGeneratedFiles": true,
+      "featureFolder": "Features",
+      "outputPath": "Generated",
+      "namespace": "TrelloAutomation.Features"
+    },
+    "plugins": [
+      {
+        "name": "SpecFlow.Plus.LivingDocPlugin"
+      },
+      {
+        "name": "SpecFlow.BoDi"
+      }
+    ],
+    "hooks": {
+      "useTestClassNameAsBindingScope": true
+    }
+  }
+}

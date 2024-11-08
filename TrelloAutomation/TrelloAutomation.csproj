@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework> <!-- Targeting .NET 8.0 framework -->
+    <ImplicitUsings>enable</ImplicitUsings> <!-- Enable implicit using directives -->
+    <Nullable>enable</Nullable> <!-- Enable nullable reference types -->
+
+    <IsPackable>false</IsPackable> <!-- Specify that the project is not packable -->
+    <IsTestProject>true</IsTestProject> <!-- Indicate that this is a test project -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Package references for various dependencies -->
+    <PackageReference Include="coverlet.collector" Version="6.0.0" /> <!-- Coverlet for code coverage -->
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" /> <!-- Configuration support -->
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" /> <!-- JSON configuration provider -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" /> <!-- SDK for running tests -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" /> <!-- JSON serialization/deserialization -->
+    <PackageReference Include="NUnit" Version="3.14.0" /> <!-- NUnit testing framework -->
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0" /> <!-- Analyzers for NUnit -->
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" /> <!-- Test adapter for NUnit -->
+    <PackageReference Include="Selenium.Support" Version="4.25.0" /> <!-- Selenium support library -->
+    <PackageReference Include="Selenium.WebDriver" Version="4.25.0" /> <!-- Selenium WebDriver library -->
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="118.0.5993.7000" /> <!-- ChromeDriver for Selenium -->
+    <PackageReference Include="Serilog" Version="4.1.0" /> <!-- Serilog for logging -->
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" /> <!-- Console sink for Serilog -->
+    <PackageReference Include="SpecFlow" Version="3.9.74" /> <!-- SpecFlow for BDD testing -->
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" /> <!-- SpecFlow integration with NUnit -->
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" /> <!-- LivingDoc plugin for SpecFlow -->
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" /> <!-- Tools for generating SpecFlow code -->
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" /> <!-- Drawing library for cross-platform support -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NUnit.Framework" /> <!-- Using directive for NUnit framework -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Ensure appsettings.json is copied to the output directory -->
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
