@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj": {}
+    "C:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj": {
+    "C:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj",
+        "projectUniqueName": "C:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj",
         "projectName": "TrelloAutomation",
-        "projectPath": "C:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj",
+        "projectPath": "C:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj",
         "packagesPath": "C:\\Users\\necip.arikan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\obj\\",
+        "outputPath": "C:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\necip.arikan\\AppData\\Roaming\\NuGet\\NuGet.Config",

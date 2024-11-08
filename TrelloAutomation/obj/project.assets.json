@@ -6686,11 +6686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj",
+      "projectUniqueName": "c:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj",
       "projectName": "TrelloAutomation",
-      "projectPath": "c:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\TrelloAutomation.csproj",
+      "projectPath": "c:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\TrelloAutomation.csproj",
       "packagesPath": "C:\\Users\\necip.arikan\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\necip.arikan\\TrelloAutomationProject\\TrelloAutomation\\obj\\",
+      "outputPath": "c:\\Users\\necip.arikan\\Git\\TrelloAutomation\\TrelloAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\necip.arikan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrelloAutomation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e34de586195db16871d398c86336c41c1d91e90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2161e4b4f709e0666ec88b9ca8eddc934fe570f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrelloAutomation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrelloAutomation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
