@@ -87,58 +87,6 @@ Screenshots taken during the tests are saved in the following directory:
 
 Where `{ProjectDirectory}` is the root directory of the cloned repository. The screenshots provide visual verification of the test execution at various stages.
 
-## Project Structure
-
-The project includes below structure to organize the tests:
-
-# TRELLOAUTOMATION Project Structure
-
-<details>
-<summary>Expand to view project structure</summary>
-
-TRELLOAUTOMATION
-TrelloAutomation/
-    Config/
-        TrelloSettings.cs // Configuration settings for Trello
-Features/
-    Login.feature // Gherkin feature file for login scenario
-    BoardManagement.feature // Gherkin feature file for board management scenarios
-    BoardApiTests.feature // Gherkin feature file for API tests related to board and card creation
-Helpers/
-    WebDriverFactory.cs // Helper class for creating WebDriver instances
-    ScreenshotHelper.cs // Helper class for taking screenshots
-    ApiHelper.cs // Helper class for API requests
-Models/
-    TrelloModels.cs // Model class for Trello List
-PageObjects/
-    IBoardPage.cs // Interface for board page interactions
-    BoardPage.cs // Implementation of IBoardPage
-    ILoginPage.cs // Interface for login page interactions
-    LoginPage.cs // Implementation of ILoginPage
-Startup.cs // Startup class for configuring services
-Tests/
-    APITests/ // Folder for API test cases
-        TrelloApiTests.cs // API test cases for Trello
-            BoardApiSteps.cs // Step definitions for Board API tests
-│ │ └── UITests/ // Folder for UI test cases
-│ │ ├── BoardSteps.cs // Step definitions for BoardManagement scenarios
-│ │ └── Hooks.cs // Hooks class for SpecFlow
-│ ├── TestResults/
-│ │ └── TestResult.trx // Test result file
-│ ├── appsettings.json // Configuration settings file
-│ ├── LivingDoc.html // Living documentation file
-│ ├── specflow.json // SpecFlow configuration file
-│ ├── Dockerfile // Dockerfile for the project
-│ ├── docker-compose.yml // Docker Compose configuration
-│ └── Test Plan/ // Folder containing the Test Plan document
-│ └── Test Plan for Trello Automation Project.pdf
-├── TrelloAutomation.sln // Solution file for managing the project
-└── README.md // This README file
-
-</details>
-
-
-
 ## Requirements of the Test
 
 - Users should be able to create, edit, and delete a board and a card.
